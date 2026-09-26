@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <META NAME="viewport" Content="width=device-width, initial-scale=1.0">
     <TITLE>О себе - искусство и креатив</TITLE>
-    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        textarea {
+            min-height: 150px;
+            box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
+            font-family: monospace;
+        }
+    </style>
 </HEAD>
 <BODY>
     <header>
@@ -14,7 +21,12 @@
     <div class="content">
         <main>
             <img src="myphoto.jpg" alt="Мой портрет" width="300" height="300">
-            <section>
+            <nav>
+                <a href="#skills">Навыки</a>
+                <a href="#projects">Проекты</a>
+                <a href="#feedback">Обратная связь</a>
+            </nav>
+            <section id="skills" class="card">
                 <h2>Навыки</h2>
                 <ul>
                     <li>Графический дизайн</li>
@@ -22,15 +34,18 @@
                     <li>Глина и лепка</li>
                 </ul>
             </section>
-            <section>
+            <section id="projects" class="card">
                 <h2>Проекты</h2>
-                <ol>
-                    <li>Выставка бани - "Молодые художники"</li>
-                    <li>Участие в арт-фестивале "Живой Взгляд"</li>
-                    <li>Серия глиняных работ для выставки - "Арт-пространство"</li>
-                </ol>
+                <div class="project-card">
+                    <span class="favorite">*Избранное</span>
+                    <ol>
+                        <li>Выставка бани - "Молодые художники"</li>
+                        <li>Участие в арт-фестивале "Живой Взгляд"</li>
+                        <li>Серия глиняных работ для выставки - "Арт-пространство"</li>
+                    </ol>
+                </div>
             </section>
-            <section>
+            <section id="feedback" class="card">
                 <h2>Обратная связь</h2>
                 <form action="#" method="post">
                     <p>
@@ -49,8 +64,9 @@
                 </form>
             </section>
         </main>
-        <aside>
-            <p>Любимое направление в искусстве - <strong>минимализм</strong></p>
+        <aside style="background-color: rgba(255, 255, 255, 0.7);">
+            <h3>Любимое направление</h3>
+            <p>В искусстве мне больше всего нравится - <strong>минимализм</strong>.</p>
         </aside>
     </div>
     <footer>
